@@ -29,19 +29,21 @@ NEWS_DATASET/
 ```
 
 🚀 Features
-    Dual-Model Architecture:
-    Authenticity Check: Distinguishes between trusted reporting (e.g., Reuters) and fabricated news.
-    Topic Classification: Automatically categorizes articles into subjects like Politics, World News, or US News.
-    High Accuracy: Achieves ~98.7% accuracy on fake news detection and ~92.5% on subject classification.
-    Text Processing: Implements advanced cleaning including Regex filtering, Lowercasing, and Porter Stemming.
-    Interactive UI: A user-friendly web interface built with Streamlit.
+
+- Dual-Model Architecture:
+- Authenticity Check: Distinguishes between trusted reporting (e.g., Reuters) and fabricated news.
+- Topic Classification: Automatically categorizes articles into subjects like Politics, World News, or US News.
+- High Accuracy: Achieves ~98.7% accuracy on fake news detection and ~92.5% on subject classification.
+- Text Processing: Implements advanced cleaning including Regex filtering, Lowercasing, and Porter Stemming.
+- Interactive UI: A user-friendly web interface built with Streamlit.
 
 🛠️ Tech Stack
-    Core: Python 3.x
-    Data Processing: Pandas, NumPy, NLTK (Natural Language Toolkit)
-    Machine Learning: Scikit-Learn (Logistic Regression, TF-IDF Vectorizer)
-    Visualization: Matplotlib, Seaborn
-    Deployment: Streamlit
+
+   - Core: Python 3.x
+   - Data Processing: Pandas, NumPy, NLTK (Natural Language Toolkit)
+   - Machine Learning: Scikit-Learn (Logistic Regression, TF-IDF Vectorizer)
+   - Visualization: Matplotlib, Seaborn
+   - Deployment: Streamlit
 
 💿 Installation & Usage
 1. Prerequisites
