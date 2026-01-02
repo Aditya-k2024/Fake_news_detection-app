@@ -12,15 +12,15 @@ The project is organized as follows:
 ```text
 NEWS_DATASET/
 │
-├── app.py                      # The main Streamlit web application
-├── requirements.txt            # List of Python dependencies
+├── app.py                      
+├── requirements.txt            
 │
-├── Dataset & Notebook/         # Training data and experiments
-│   ├── Fake.csv                # Raw dataset (Fake News)
-│   ├── True.csv                # Raw dataset (Real News)
-│   └── model.ipynb             # Jupyter Notebook for EDA & Training
+├── Dataset & Notebook/         
+│   ├── Fake.csv                
+│   ├── True.csv                
+│   └── model.ipynb             
 │
-└── models/                     # Saved model artifacts (.pkl files)
+└── models/                     
     ├── model_2_fake_detection.pkl
     ├── model_subject_classification.pkl
     ├── vectorizer.pkl
@@ -29,29 +29,18 @@ NEWS_DATASET/
 ```
 
 🚀 Features
-
     Dual-Model Architecture:
-
-        Authenticity Check: Distinguishes between trusted reporting (e.g., Reuters) and fabricated news.
-
-        Topic Classification: Automatically categorizes articles into subjects like Politics, World News, or US News.
-
+    Authenticity Check: Distinguishes between trusted reporting (e.g., Reuters) and fabricated news.
+    Topic Classification: Automatically categorizes articles into subjects like Politics, World News, or US News.
     High Accuracy: Achieves ~98.7% accuracy on fake news detection and ~92.5% on subject classification.
-
     Text Processing: Implements advanced cleaning including Regex filtering, Lowercasing, and Porter Stemming.
-
     Interactive UI: A user-friendly web interface built with Streamlit.
 
 🛠️ Tech Stack
-
     Core: Python 3.x
-
     Data Processing: Pandas, NumPy, NLTK (Natural Language Toolkit)
-
     Machine Learning: Scikit-Learn (Logistic Regression, TF-IDF Vectorizer)
-
     Visualization: Matplotlib, Seaborn
-
     Deployment: Streamlit
 
 💿 Installation & Usage
