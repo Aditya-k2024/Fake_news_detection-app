@@ -26,6 +26,7 @@ NEWS_DATASET/
     ├── vectorizer.pkl
     ├── label_encoder.pkl
     └── porter_stemmer.pkl
+```
 
 Note: The .pkl files in the models/ directory are generated after running model.ipynb.
 
