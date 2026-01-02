@@ -7,7 +7,7 @@
 An end-to-end Machine Learning project that identifies whether a news article is **Fake** or **Real** and classifies its **Subject** (e.g., Politics, World News). The project includes a Jupyter Notebook for training and a Streamlit web application for real-time inference.
 
 🌐 Live 𝗦𝘁𝗿𝗲𝗮𝗺𝗹𝗶𝘁 app: https://fakenewsdetector124.streamlit.app
-   Dataset link : https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
+- Dataset link : https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
 
 ## 📂 Folder Structure
 The project is organized as follows:
