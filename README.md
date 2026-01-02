@@ -28,8 +28,6 @@ NEWS_DATASET/
     └── porter_stemmer.pkl
 ```
 
-Note: The .pkl files in the models/ directory are generated after running model.ipynb.
-
 🚀 Features
 
     Dual-Model Architecture:
@@ -60,54 +58,3 @@ Note: The .pkl files in the models/ directory are generated after running model.
 1. Prerequisites
 
 Ensure you have Python installed. It is recommended to use a virtual environment.
-Bash
-
-# Clone or download this repository
-cd NEWS_DATASET
-
-2. Install Dependencies
-
-Install the required libraries using the provided requirements.txt file.
-Bash
-
-pip install -r requirements.txt
-
-3. Train the Models (Optional)
-
-If the models/ directory is empty, you need to train the models first.
-
-    Open Dataset & Notebook/model.ipynb in Jupyter Notebook or VS Code.
-
-    Run all cells. This will process Fake.csv and True.csv and generate the .pkl files using joblib.
-
-    Move the generated .pkl files into the models/ folder if they are saved elsewhere.
-
-4. Run the Web Application
-
-Launch the Streamlit app to test news articles interactively.
-Bash
-
-streamlit run app.py
-
-The app will open in your browser at http://localhost:8501.
-🧠 Technical Details
-Data Preprocessing
-
-Raw text data is noisy. The model.ipynb notebook applies the following cleaning pipeline:
-
-    Regex Cleaning: Removes non-alphabetical characters.
-
-    Lowercasing: Standardizes text case.
-
-    Stopword Removal: Removes common words (e.g., "the", "is") using NLTK.
-
-    Stemming: Reduces words to their root form (e.g., "voting" → "vote") using PorterStemmer.
-
-    Vectorization: Converts text to numerical format using TfidfVectorizer.
-
-Model Performance
-
-The models were trained on the ISOT Fake News Dataset (~45k articles).
-Model	Algorithm	Training Accuracy	Testing Accuracy
-Fake News Detector	Logistic Regression	99.2%	98.7%
-Subject Classifier	Logistic Regression (Multinomial)	95.8%	92.5%
